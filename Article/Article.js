@@ -170,7 +170,7 @@ data.forEach(pageData => {
 
 //creating new article
 
-// createArticle(title: 'Google Chrome vs Firefox, The Scandal!',
+// createArticle.push(title: 'Google Chrome vs Firefox, The Scandal!',
 //     date: 'September 4, 2019 ',
 //     firstParagraph: 'Texas left dollareydoos impy & chimpy dorkus molorkus dealie the e-z road to success bathiola eat my shorts shiva h. vishnu cromulent menapplause avoision fancy store-bought dirt texas left reverse vampires chestal the cause of and solution to all of life\'s problems. just like in real life garbagewater knifey wifey foodrinkery fudrucker pointy kitty eat our shirts land monster avoision diddily shark boy you are hearing me talk nervous pervis kwyjibo d\'oh! nervous pervis my son is also named bort commie-nazis gangsta city underreacting rappin\' surfer ketchup assal horizontology.',
 //     secondParagraph: 'Texas penny sophistimacated doowhackey mazuma nuisancefon scotchtoberfest four minutes. please let me explain the cause of and solution to all of life\'s problems. smuggled vegetables chester a. arthritis zazz delicious caulk glavin spokesrebel juzz america\'s crud bucket poochie death threats deceleratrix unfaceuptoable jebus houseware warehouse pointy kitty silicon chips and such lard-ho beginualize successmanship yoink zing wizard\'s key zuh bonus eruptus reverse vampires betsy bleedingheart there\'s no need to murmur swedish lunchbox it works just like regular money, but it\'s fun jebus knifey wifey chocotastic your older, balder, fatter son.',
