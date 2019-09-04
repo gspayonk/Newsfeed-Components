@@ -113,13 +113,7 @@ const data = [{
 */
 
 //grabbing article to append components
-const article = document.querySelector('.article');
-
-//creating multiple components
-data.forEach(pageData => {
-    console.log('creating article', pageData.title)
-    article.appendChild(createArticle(pageData.title, pageData.date, pageData.firstParagraph, pageData.secondParagraph, pageData.thirdParagraph))
-})
+const container = document.querySelector('.articles');
 
 //reusable componenets to pull in data
 function createArticle(title, date, firstParagraph, secondParagraph, thirdParagraph) {
@@ -129,17 +123,55 @@ function createArticle(title, date, firstParagraph, secondParagraph, thirdParagr
     const articleParagraphOne = document.createElement('p');
     const articleParagraphTwo = document.createElement('p');
     const articleParagraphThree = document.createElement('p');
+    const articleExpandButton = document.createElement('span');
 
     //setting up structure of elements
     articleMain.appendChild(articleTitle);
     articleMain.appendChild(articleDate);
-    articleMain.appendChild(articleOpen);
-
+    articleMain.appendChild(articleParagraphOne);
+    articleMain.appendChild(articleParagraphTwo);
+    articleMain.appendChild(articleParagraphThree);
+    articleMain.appendChild(articleExpandButton);
 
 
     //setting class names
-    articleMain.classList('article');
-    articleDate.classList('date');
-    articleOpen.classList('expandButton');
+    articleMain.classList.add('article');
+    articleDate.classList.add('date');
+    articleExpandButton.classList.add('expandButton');
+
+    //setting text content
+    articleTitle.textContent = title;
+    articleDate.textContent = date;
+    articleParagraphOne.textContent = firstParagraph;
+    articleParagraphTwo.textContent = secondParagraph;
+    articleParagraphThree.textContent = thirdParagraph;
+    articleExpandButton.textContent = 'Expand';
+
+    //event listener expandbtn
+    articleExpandButton.addEventListener('click', event => {
+        console.log('toggle');
+        articleMain.classList.toggle('article-open');
+        articleMain.classList.toggle('close');
+    })
+
+    //returning components
+    return articleMain;
 
 }
+//creating multiple components - mapping
+data.forEach(pageData => {
+    container.appendChild(createArticle(
+        pageData.title,
+        pageData.date,
+        pageData.firstParagraph,
+        pageData.secondParagraph,
+        pageData.thirdParagraph))
+})
+
+//creating new article
+
+// createArticle(title: 'Google Chrome vs Firefox, The Scandal!',
+//     date: 'September 4, 2019 ',
+//     firstParagraph: 'Texas left dollareydoos impy & chimpy dorkus molorkus dealie the e-z road to success bathiola eat my shorts shiva h. vishnu cromulent menapplause avoision fancy store-bought dirt texas left reverse vampires chestal the cause of and solution to all of life\'s problems. just like in real life garbagewater knifey wifey foodrinkery fudrucker pointy kitty eat our shirts land monster avoision diddily shark boy you are hearing me talk nervous pervis kwyjibo d\'oh! nervous pervis my son is also named bort commie-nazis gangsta city underreacting rappin\' surfer ketchup assal horizontology.',
+//     secondParagraph: 'Texas penny sophistimacated doowhackey mazuma nuisancefon scotchtoberfest four minutes. please let me explain the cause of and solution to all of life\'s problems. smuggled vegetables chester a. arthritis zazz delicious caulk glavin spokesrebel juzz america\'s crud bucket poochie death threats deceleratrix unfaceuptoable jebus houseware warehouse pointy kitty silicon chips and such lard-ho beginualize successmanship yoink zing wizard\'s key zuh bonus eruptus reverse vampires betsy bleedingheart there\'s no need to murmur swedish lunchbox it works just like regular money, but it\'s fun jebus knifey wifey chocotastic your older, balder, fatter son.',
+//     thirdParagraph: 'Faxtrola steamed hams zazz okely dokely neighborino catsup unblowuppable poochie death threats posturologists groin-grabbingly municipal roundtable magumba doctorb they tried that in the movies and it didn\'t work crisitunity christmas ape fantastipotamus foundling-a-ding bovine university swishifying hey-dilly-ho impy & chimpy poochie jiminy jillikers saxamaphone malparkage homerhol pollutinest no-breath microcalifragilistics have been either drunk or on cocaine reversifying glass dirty, maybe. dangerous, hardly. municipal roundtable the old fork in the eye uncle ant the congealed group the cause of and solution to all of life\'s problems. chestal crazy critter');
