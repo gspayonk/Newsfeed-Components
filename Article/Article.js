@@ -84,6 +84,13 @@ const data = [{
         thirdParagraph: `Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor hodor? Hodor!
           Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
+    },
+    {
+        title: 'Google Chrome vs Firefox, The Scandal!',
+        date: 'September 4, 2019 ',
+        firstParagraph: `Texas left dollareydoos impy & chimpy dorkus molorkus dealie the e-z road to success bathiola eat my shorts shiva h. vishnu cromulent menapplause avoision fancy store-bought dirt texas left reverse vampires chestal the cause of and solution to all of life\'s problems. just like in real life garbagewater knifey wifey foodrinkery fudrucker pointy kitty eat our shirts land monster avoision diddily shark boy you are hearing me talk nervous pervis kwyjibo d\'oh! nervous pervis my son is also named bort commie-nazis gangsta city underreacting rappin\' surfer ketchup assal horizontology.`,
+        secondParagraph: `Texas penny sophistimacated doowhackey mazuma nuisancefon scotchtoberfest four minutes. please let me explain the cause of and solution to all of life\'s problems. smuggled vegetables chester a. arthritis zazz delicious caulk glavin spokesrebel juzz america\'s crud bucket poochie death threats deceleratrix unfaceuptoable jebus houseware warehouse pointy kitty silicon chips and such lard-ho beginualize successmanship yoink zing wizard\'s key zuh bonus eruptus reverse vampires betsy bleedingheart there\'s no need to murmur swedish lunchbox it works just like regular money, but it\'s fun jebus knifey wifey chocotastic your older, balder, fatter son.`,
+        thirdParagraph: `Faxtrola steamed hams zazz okely dokely neighborino catsup unblowuppable poochie death threats posturologists groin-grabbingly municipal roundtable magumba doctorb they tried that in the movies and it didn\'t work crisitunity christmas ape fantastipotamus foundling-a-ding bovine university swishifying hey-dilly-ho impy & chimpy poochie jiminy jillikers saxamaphone malparkage homerhol pollutinest no-breath microcalifragilistics have been either drunk or on cocaine reversifying glass dirty, maybe. dangerous, hardly. municipal roundtable the old fork in the eye uncle ant the congealed group the cause of and solution to all of life\'s problems. chestal crazy critter.`,
     }
 ];
 
@@ -169,13 +176,13 @@ data.forEach(pageData => {
 })
 
 //creating new article
-data.push({
-    title: 'Google Chrome vs Firefox, The Scandal!',
-    date: 'September 4, 2019 ',
-    firstParagraph: `Texas left dollareydoos impy & chimpy dorkus molorkus dealie the e-z road to success bathiola eat my shorts shiva h. vishnu cromulent menapplause avoision fancy store-bought dirt texas left reverse vampires chestal the cause of and solution to all of life\'s problems. just like in real life garbagewater knifey wifey foodrinkery fudrucker pointy kitty eat our shirts land monster avoision diddily shark boy you are hearing me talk nervous pervis kwyjibo d\'oh! nervous pervis my son is also named bort commie-nazis gangsta city underreacting rappin\' surfer ketchup assal horizontology.`,
-    secondParagraph: `Texas penny sophistimacated doowhackey mazuma nuisancefon scotchtoberfest four minutes. please let me explain the cause of and solution to all of life\'s problems. smuggled vegetables chester a. arthritis zazz delicious caulk glavin spokesrebel juzz america\'s crud bucket poochie death threats deceleratrix unfaceuptoable jebus houseware warehouse pointy kitty silicon chips and such lard-ho beginualize successmanship yoink zing wizard\'s key zuh bonus eruptus reverse vampires betsy bleedingheart there\'s no need to murmur swedish lunchbox it works just like regular money, but it\'s fun jebus knifey wifey chocotastic your older, balder, fatter son.`,
-    thirdParagraph: `Faxtrola steamed hams zazz okely dokely neighborino catsup unblowuppable poochie death threats posturologists groin-grabbingly municipal roundtable magumba doctorb they tried that in the movies and it didn\'t work crisitunity christmas ape fantastipotamus foundling-a-ding bovine university swishifying hey-dilly-ho impy & chimpy poochie jiminy jillikers saxamaphone malparkage homerhol pollutinest no-breath microcalifragilistics have been either drunk or on cocaine reversifying glass dirty, maybe. dangerous, hardly. municipal roundtable the old fork in the eye uncle ant the congealed group the cause of and solution to all of life\'s problems. chestal crazy critter.`,
-});
+// data.push({
+//     title: 'Google Chrome vs Firefox, The Scandal!',
+//     date: 'September 4, 2019 ',
+//     firstParagraph: `Texas left dollareydoos impy & chimpy dorkus molorkus dealie the e-z road to success bathiola eat my shorts shiva h. vishnu cromulent menapplause avoision fancy store-bought dirt texas left reverse vampires chestal the cause of and solution to all of life\'s problems. just like in real life garbagewater knifey wifey foodrinkery fudrucker pointy kitty eat our shirts land monster avoision diddily shark boy you are hearing me talk nervous pervis kwyjibo d\'oh! nervous pervis my son is also named bort commie-nazis gangsta city underreacting rappin\' surfer ketchup assal horizontology.`,
+//     secondParagraph: `Texas penny sophistimacated doowhackey mazuma nuisancefon scotchtoberfest four minutes. please let me explain the cause of and solution to all of life\'s problems. smuggled vegetables chester a. arthritis zazz delicious caulk glavin spokesrebel juzz america\'s crud bucket poochie death threats deceleratrix unfaceuptoable jebus houseware warehouse pointy kitty silicon chips and such lard-ho beginualize successmanship yoink zing wizard\'s key zuh bonus eruptus reverse vampires betsy bleedingheart there\'s no need to murmur swedish lunchbox it works just like regular money, but it\'s fun jebus knifey wifey chocotastic your older, balder, fatter son.`,
+//     thirdParagraph: `Faxtrola steamed hams zazz okely dokely neighborino catsup unblowuppable poochie death threats posturologists groin-grabbingly municipal roundtable magumba doctorb they tried that in the movies and it didn\'t work crisitunity christmas ape fantastipotamus foundling-a-ding bovine university swishifying hey-dilly-ho impy & chimpy poochie jiminy jillikers saxamaphone malparkage homerhol pollutinest no-breath microcalifragilistics have been either drunk or on cocaine reversifying glass dirty, maybe. dangerous, hardly. municipal roundtable the old fork in the eye uncle ant the congealed group the cause of and solution to all of life\'s problems. chestal crazy critter.`,
+// });
 console.log(data);
 
 //native css stretch added to header.less
