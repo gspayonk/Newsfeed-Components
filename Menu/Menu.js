@@ -39,8 +39,8 @@ const header = document.querySelector('.header');
 const menuButton = document.querySelector('.menu-button');
 
 
-function menu(menuItems) {
-    const menuSection = document.createElement('div');
+function createMenu(menuItems) {
+    const menu = document.createElement('div');
     const list = document.createElement('ul');
 
     menuItems.forEach(items => {
@@ -49,16 +49,16 @@ function menu(menuItems) {
         list.appendChild(listItem);
     });
 
-    menuSection.appendChild(list);
+    menu.appendChild(list);
 
-    menuSection.classList.add('menu');
+    menu.classList.add('menu');
 
     menuButton.addEventListener('click', event => {
-        menuSection.classList.toggle('menu--open');
+        menu.classList.toggle('menu--open');
         console.log('menu works');
     });
 
-    return menuSection;
+    return menu;
 }
 
-header.appendChild(menu(menuItems))
+header.appendChild(createMenu(menuItems));

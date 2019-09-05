@@ -2,6 +2,7 @@
   width: 100%;
   height: 75px;
   background-color: #388E3C;
+  animation: pulse 5 s infinite;//added animation
   color: white;
   display: flex;
   justify-content: center;
@@ -14,4 +15,14 @@
     margin: 0;
     font-size: 48px;
   }
+}
+
+//css native stretch
+@keyframes pulse {
+  0% {
+      background-color: crimson;
+  }
+  100% {
+          background-color: #388E3C;
+}
 }
